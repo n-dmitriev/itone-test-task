@@ -17,7 +17,7 @@ function App() {
 
   const getRepositoriesData = useCallback(
     (currentPage = page) => {
-      if (page >= 0) {
+      if (currentPage >= 0) {
         setPage(currentPage);
         sendRequest(
           `https://api.github.com/search/repositories?q=language:Typescript&sort=stars&page=${page}&per_page=10`

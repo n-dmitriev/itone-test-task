@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  background-color: #282c34;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+
+  &__btn-col {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #292d37;
+      .app__arrow {
+        color: #62dafb;
+      }
+    }
+  }
+
+  &__arrow {
+    position: fixed;
+    top: 50vh;
+    font-size: 50px;
+    color: white;
+  }
+
+  &__counter {
+    position: fixed;
+    font-size: 60px;
+    top: 40px;
+  }
+
+  &-logo {
+    margin: auto;
+    height: 40vmin;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

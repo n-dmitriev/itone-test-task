@@ -31,8 +31,6 @@ function App() {
     getRepositoriesData();
   }, []);
 
-  console.error(repositories);
-
   return (
     <div className="app">
       {repositoriesLoading || !repositories?.items ? (
@@ -47,7 +45,7 @@ function App() {
             {!!page && <span className="app__arrow">&#8249;</span>}
           </div>
           <div className="app__content">
-            <RepositoriesList repositories={repositories?.items || []} />
+            <RepositoriesList repositories={repositories.items} />
           </div>
           <div
             onClick={() => getRepositoriesData(page + 1)}

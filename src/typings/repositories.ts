@@ -1,6 +1,6 @@
 export interface IRepositoriesInfo {
   incomplete_results: boolean;
-  items: [];
+  items: IRepository[];
   total_count: number;
 }
 

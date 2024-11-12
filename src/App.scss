@@ -6,15 +6,12 @@
   background-color: #282c34;
 
   &__content {
-    display: flex;
-    flex-direction: column;
     flex: 3;
   }
 
   &__btn-col {
     display: flex;
     flex: 1;
-    align-items: center;
     justify-content: center;
     cursor: pointer;
 
@@ -30,13 +27,12 @@
     position: fixed;
     top: 50vh;
     font-size: 50px;
-    color: white;
   }
 
   &__counter {
     position: fixed;
-    font-size: 60px;
     top: 40px;
+    font-size: 60px;
   }
 
   &-logo {
